@@ -1,0 +1,22 @@
+{
+  "name": "pleasure",
+  "version": "0.0.4",
+  "description": "Twig based Static Site Generator, powered by gulp.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "node_modules/gulp/bin/gulp.js",
+    "build": "node_modules/gulp/bin/gulp.js build --production",
+    "clean": "node_modules/gulp/bin/gulp.js clean --production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "gulp": "^4.0.0",
+    "gulp-tasks-pleasure": "^0.0.16",
+    "include-media": "^1.4.9",
+    "jquery": "^3.3.1",
+    "modularscale-sass": "^3.0.8",
+    "typi": "^3.2.0"
+  }
+}
