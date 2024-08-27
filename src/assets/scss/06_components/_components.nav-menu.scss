@@ -1,0 +1,12 @@
+.c-nav-menu {
+  display: flex;
+
+}
+
+.c-nav-menu__item {
+  box-sizing: border-box;
+}
+
+.c-nav-menu__item__link {
+  border: 1px solid $verde;
+}

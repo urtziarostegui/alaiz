@@ -1,0 +1,34 @@
+.c-topbar {
+  display: flex;
+  justify-content: end;
+  a {
+    text-decoration: none;
+  }
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.c-topbar__dir {
+  h1 {
+    font-size: 16px;
+  }
+}
+
+.c-topbar__tel {
+  font-weight: bold;
+}
+
+.c-topbar__cita {
+  background-color: $verde;
+  color: $oscuro;
+  border-radius: 0 0 20px 20px;
+}
+
+.c-topbar__button {
+  background-color: $verde-claro;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 2px solid $verde-medio;
+  margin-left: 2px;
+}
