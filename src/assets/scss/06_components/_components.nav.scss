@@ -1,18 +1,21 @@
 #header .c-nav {
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: end;
   padding: 0;
+  height: 100px;
 }
 
 #header .c-nav__logo {
-  width: 300px;
+  width: 350px;
   display: inline-block;
-
+  position: absolute;
+  top: -40%;
   img {width: 100%;}
 }
+
 
 #header .c-nav__link {
   color: black;
