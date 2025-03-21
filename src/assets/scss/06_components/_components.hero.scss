@@ -1,0 +1,42 @@
+.hero {
+  background-image: url('https://placedog.net/1200/400?id=1');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 5px;
+}
+
+.hero-content {
+  background: rgba(19, 18, 18, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    background-size: cover; /* Mantiene la imagen de fondo sin repetir */
+    background-position: center; /* Centra la imagen para que se vea bien en móvil */
+    background-attachment: scroll; /* Quita el parallax en móvil */
+    height: 200px;
+  }
+
+  .hero-content{
+    display: none;
+  }
+
+
+}

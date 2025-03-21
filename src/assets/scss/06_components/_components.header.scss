@@ -1,9 +1,5 @@
 .c-header {}
 
-.t-green-spacer {
-  background-color: $verde;
-  height: 2vh;
-}
 // MEDIA QUERY EXAMPLE
 
 @include media-breakpoint-up(lg) {

@@ -1,0 +1,109 @@
+/* Estilos generales */
+.menu-bar {
+  position: fixed;
+  top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 5px 30px;
+  border-bottom: 2px solid green;
+  width: 100%;
+  z-index: 1000;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.logo {
+  padding-left: 20px;
+}
+
+.logo img {
+  max-height: 100px; /* Ajusta la altura máxima */
+  margin: 10px;
+}
+
+ul {
+  margin: 0;
+  padding-right: 20px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.menu li {
+  overflow: hidden;
+}
+
+.menu li a {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: green;
+  padding: 10px 15px;
+  transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+  white-space: nowrap;
+  font-size: 1.3em;
+}
+
+.menu li a:hover {
+  transform: scale(1.2);
+  color: darkgreen;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  z-index: 1001;
+}
+
+
+@media (max-width: 768px) {
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: fixed; /* Cambio a fixed para que ocupe toda la pantalla */
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    padding: 0;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombras */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Alinea los elementos al centro */
+  }
+
+  /* Cuando el menú tiene la clase "active", se muestra */
+  .menu.active {
+    display: flex;
+  }
+
+  /* Estilo del botón hamburguesa */
+  .hamburger {
+    display: block;
+  }
+
+  /* Ajustes para el logo */
+  .logo {
+    padding-left: 0;
+  }
+
+  .logo img {
+    max-height: 70px;
+  }
+
+  /* Opcional: Si quieres que el header también ocupe toda la pantalla */
+  .menu-bar {
+    padding: 10px 20px; /* Ajustamos el padding */
+  }
+}

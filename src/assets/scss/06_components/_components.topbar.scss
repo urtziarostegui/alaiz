@@ -1,34 +1,45 @@
-.c-topbar {
+.top-bar {
+  position: fixed;
   display: flex;
-  justify-content: end;
-  a {
-    text-decoration: none;
-  }
-  p {
-    margin-bottom: 0px;
-  }
-}
-
-.c-topbar__dir {
-  h1 {
-    font-size: 16px;
-  }
-}
-
-.c-topbar__tel {
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $verde-medio;
+  color: white;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
   font-weight: bold;
+  font-size: 1em;
+  transition: transform 0.3s ease; /* Añadir transición */
+  gap: 40px;
 }
 
-.c-topbar__cita {
-  background-color: $verde;
-  color: $oscuro;
-  border-radius: 0 0 20px 20px;
+.top-bar a {
+  color: white;
+  text-decoration: none;
 }
 
-.c-topbar__button {
-  background-color: $verde-claro;
-  font-weight: bold;
-  border-radius: 15px;
-  border: 2px solid $verde-medio;
-  margin-left: 2px;
+.top-bar i {
+  margin: 0 5px; /* Espacio entre el ícono y el número */
+  color: white; /* Color del ícono */
+}
+
+.top-bar p span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+  .top-bar {
+
+  }
+
+  .top-bar_p{
+    display: none;
+  }
+
 }

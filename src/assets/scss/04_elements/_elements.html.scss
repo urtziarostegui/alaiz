@@ -1,11 +1,13 @@
-html {
-  scroll-behavior: smooth;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.5px;
 }

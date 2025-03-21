@@ -1,0 +1,51 @@
+
+
+/* Estilo para la sección bajo el hero */
+.four-cards {
+  background-color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.info-block {
+  display: flex;
+  flex-wrap: wrap; /* Esto permite que los items se envuelvan en varias filas */
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px; /* Tamaño máximo para mantener los bloques centrados */
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 4px solid $verde;
+  width: 48%; /* Ajustamos para que quepan dos en cada fila */
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: $verde;
+}
+
+.info-text {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Haciendo que se vea bien en dispositivos pequeños */
+@media (max-width: 768px) {
+  .info-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
