@@ -1,2 +1,15 @@
 title: Home
 description: Web description.
+textos_iconos:
+  - id: texto1
+    titulo: Diagnosis
+    texto: Texto para Diagnosis
+  - id: texto2
+    titulo: Análisis
+    texto: Texto para Análisis
+  - id: texto3
+    titulo: Vacunación
+    texto: Texto para Vacunación
+  - id: texto4
+    titulo: Tratamientos
+    texto: Texto para Tratamientos

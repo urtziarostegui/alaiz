@@ -31,7 +31,7 @@ ul {
 .menu {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 20px;
   flex-grow: 1;
   justify-content: flex-end;
 }
@@ -45,11 +45,11 @@ ul {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-decoration: none;
-  color: green;
-  padding: 10px 15px;
+  color: $oscuro;
+  padding: 10px 20px;
   transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
   white-space: nowrap;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .menu li a:hover {
