@@ -56,3 +56,57 @@ infoBlock.addEventListener('mouseleave', () => {
     item.querySelector('.icon-container').style.opacity = 1;
   });
 });
+
+// Scroll suave para las anclas del menú
+document.addEventListener('DOMContentLoaded', function() {
+  const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
+  
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      
+      console.log('Click en enlace:', targetId);
+      console.log('Elemento encontrado:', targetElement);
+      
+      if (targetElement) {
+        // Para el ancla de inicio, siempre hacer scroll al top
+        if (targetId === '#inicio') {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        } else {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+          });
+        }
+      } else {
+        console.log('No se encontró el elemento con ID:', targetId);
+      }
+    });
+  });
+});
+
+// Función para el menú móvil
+function toggleMenu() {
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
+}
+
+// Cerrar menú móvil al hacer clic en un enlace
+document.addEventListener('DOMContentLoaded', function() {
+  const menuLinks = document.querySelectorAll('.menu a');
+  
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      const menu = document.querySelector('.menu');
+      if (menu.classList.contains('active')) {
+        menu.classList.remove('active');
+      }
+    });
+  });
+});
