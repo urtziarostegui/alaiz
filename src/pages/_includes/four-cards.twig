@@ -27,9 +27,15 @@
   </div>
 
   <div class="area-texto">
-    <p class="texto1" style="display: block;">Texto para Diagnosi</p>
-    <p class="texto2" style="display: none;">Texto para Análisis  </p>
-    <p class="texto3" style="display: none;">Texto para Vacunación</p>
-    <p class="texto4" style="display: none;">Texto para Tratamientos</p>
+    {% for item in textos_iconos %}
+      <div class="texto-bloque {{ item.id }}" style="display: {% if loop.first %}block{% else %}none{% endif %};">
+        <h3 class="titulo-superior">{{ item.titulo }}</h3>
+        <div class="texto-lado">
+          <p>{{ item.texto }}</p>
+        </div>
+      </div>
+    {% endfor %}
   </div>
 </section>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">

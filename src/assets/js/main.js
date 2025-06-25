@@ -1,5 +1,5 @@
 const infoItems = document.querySelectorAll('.info-item');
-const textParagraphs = document.querySelectorAll('.area-texto p');
+const textBlocks = document.querySelectorAll('.area-texto .texto-bloque');
 const infoBlock = document.querySelector('.info-block');
 
 infoItems.forEach(item => {
@@ -8,7 +8,6 @@ infoItems.forEach(item => {
 
   // Hover: cambiar borde y opacidad de otros
   item.addEventListener('mouseenter', () => {
-    // Limpiar bordes en todos los que NO están seleccionados
     infoItems.forEach(otherItem => {
       const otherIcon = otherItem.querySelector('.icon-container');
       if (!otherItem.classList.contains('selected')) {
@@ -22,7 +21,6 @@ infoItems.forEach(item => {
       }
     });
 
-    // Aplicar borde al ícono actual
     iconContainer.style.border = '8px solid #40b411';
     iconContainer.style.borderRadius = '50%';
   });
@@ -39,16 +37,15 @@ infoItems.forEach(item => {
     iconContainer.style.border = '8px solid #40b411';
     iconContainer.style.borderRadius = '50%';
 
-    // Mostrar solo el párrafo correspondiente
-    textParagraphs.forEach(p => p.style.display = 'none');
-    const targetText = document.querySelector(`.area-texto .${textKey}`);
-    if (targetText) {
-      targetText.style.display = 'block';
+    // Mostrar solo el bloque correspondiente
+    textBlocks.forEach(b => b.style.display = 'none');
+    const targetBlock = document.querySelector(`.area-texto .${textKey}.texto-bloque`);
+    if (targetBlock) {
+      targetBlock.style.display = 'block';
     }
   });
 });
 
-// Mouse sale del área completa (no solo de un ítem)
 infoBlock.addEventListener('mouseleave', () => {
   infoItems.forEach(item => {
     if (!item.classList.contains('selected')) {

@@ -2,14 +2,14 @@ title: Home
 description: Web description.
 textos_iconos:
   - id: texto1
-    titulo: Diagnosis
-    texto: Texto para Diagnosis
+    titulo: DIAGNÓSTICO
+    texto: "Tú conoces a tu mascota como nadie, nosotros ponemos más de 20 años de experiencia. Juntos hacemos el mejor diagnóstico. ¿Nos cuentas?"
   - id: texto2
-    titulo: Análisis
-    texto: Texto para Análisis
+    titulo: ANÁLISIS
+    texto: "A veces, lo importante está en el interior. Los análisis nos permiten ver más allá y asegurarnos de que tu mascota está bien por dentro y por fuera."
   - id: texto3
-    titulo: Vacunación
-    texto: Texto para Vacunación
+    titulo: VACUNACIÓN
+    texto: "Prevenir siempre es mejor que curar. Las vacunas ayudan a tu mascota a estar protegida y a ti, a estar más tranquilo."
   - id: texto4
-    titulo: Tratamientos
-    texto: Texto para Tratamientos
+    titulo: TRATAMIENTOS
+    texto: "Cuando las manos y el cariño no bastan, "
